@@ -1,3 +1,4 @@
+using Oculus.Platform;
 using UnityEngine;
 using UnityEngine.XR; // Needed for XRSettings
 
@@ -32,11 +33,12 @@ public class VRModeSwitcher : MonoBehaviour
             // PC mode
             vrRig.SetActive(false);
             pcRig.SetActive(true);
-
+            Camera camera = pcCamera.GetComponent<Camera>();
+            Debug.Log($"pcCamera: {pcCamera}");
             // Enable the PC camera
             if (pcCamera != null)
             {
-                pcCamera.enabled = true;
+                camera.enabled = true;
             }
         }
     }
