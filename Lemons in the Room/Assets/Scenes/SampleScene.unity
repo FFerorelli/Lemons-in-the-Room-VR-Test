@@ -410,6 +410,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db119d96de698f9468583e541f6dc245, type: 3}
+--- !u!1 &877463265 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8354341537240632634, guid: 20306d709c6a6134db008c74a2126de6, type: 3}
+  m_PrefabInstance: {fileID: 1895490319}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1112406706}
+  - component: {fileID: 1112406707}
   m_Layer: 0
   m_Name: VRModeSwitcher
   m_TagString: Untagged
@@ -578,6 +584,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1112406707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112406705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d38fb77e7b68db4ab8bc2e892a03b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vrRig: {fileID: 877463265}
+  pcRig: {fileID: 1916455693}
 --- !u!1001 &1338156550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -754,7 +774,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3468551672292244389, guid: 5f0d8b4a8bc047549b9cc61bb02ec6bb, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4320314672100231327, guid: 5f0d8b4a8bc047549b9cc61bb02ec6bb, type: 3}
       propertyPath: m_LocalPosition.x
